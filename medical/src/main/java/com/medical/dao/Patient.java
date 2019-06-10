@@ -4,13 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class patient {
+public class Patient {
 
 	@Id
 	String numeroSecu;
 	String nom;
 	String prenom;
-	String dateNeassaice;
+	String dateNessance;
 	public String getNom() {
 		return nom;
 	}
@@ -30,19 +30,19 @@ public class patient {
 		this.numeroSecu = numeroSecu;
 	}
 	public String getDateNeassaice() {
-		return dateNeassaice;
+		return dateNessance;
 	}
-	public void setDateNeassaice(String dateNeassaice) {
-		this.dateNeassaice = dateNeassaice;
+	public void setDateNessance(String dateNessance) {
+		this.dateNessance = dateNessance;
 	}
-	public patient(String nom, String prenom, String numeroSecu, String dateNeassaice) {
+	public Patient(String nom, String prenom, String numeroSecu, String dateNeassaice) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.numeroSecu = numeroSecu;
-		this.dateNeassaice = dateNeassaice;
+		this.dateNessance = dateNessance;
 	}
-	public patient() {
+	public Patient() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
